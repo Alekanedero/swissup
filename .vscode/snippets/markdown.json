@@ -1,0 +1,37 @@
+{
+  "Bash Block": {
+    "prefix": "bb",
+    "body": ["```bash", "$TM_SELECTED_TEXT", "```"],
+    "description": "Insert a Bash code block"
+  },
+  "Python Block": {
+    "prefix": "pyblock",
+    "body": ["```python", "$TM_SELECTED_TEXT", "```"],
+    "description": "Insert a Python code block"
+  },
+  "JavaScript Block": {
+    "prefix": "jsblock",
+    "body": ["```javascript", "$TM_SELECTED_TEXT", "```"],
+    "description": "Insert a JavaScript code block"
+  },
+  "HTML Block": {
+    "prefix": "htmlblock",
+    "body": ["```html", "$TM_SELECTED_TEXT", "```"],
+    "description": "Insert an HTML code block"
+  },
+  "CSS Block": {
+    "prefix": "cssblock",
+    "body": ["```css", "$TM_SELECTED_TEXT", "```"],
+    "description": "Insert a CSS code block"
+  },
+  "JSON Block": {
+    "prefix": "jsonblock",
+    "body": ["```json", "$TM_SELECTED_TEXT", "```"],
+    "description": "Insert a JSON code block"
+  },
+  "Markdown Block": {
+    "prefix": "mdblock",
+    "body": ["```markdown", "$TM_SELECTED_TEXT", "```"],
+    "description": "Insert a Markdown code block"
+  }
+}
