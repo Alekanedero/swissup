@@ -1,10 +1,8 @@
+"use client";
+
 import { Card, CardHeader } from "@/components/ui/card";
 
-export type OffreProps = {
-  name?: string;
-};
-
-export const CardOffre = (props: OffreProps) => {
+export const CardOffre = () => {
   return (
     <Card>
       <CardHeader>Offre 1</CardHeader>
