@@ -1,6 +1,8 @@
 import { Card, CardHeader } from "@/components/ui/card";
 
-export type OffreProps = {};
+export type OffreProps = {
+  name?: string;
+};
 
 export const CardOffre = (props: OffreProps) => {
   return (
