@@ -12,15 +12,12 @@ import { LogoutButton } from "./Logout";
 export const LoginButton = async () => {
   const user = await getUser();
 
-  console.log(user);
-
   return (
-    <header className="px-4 py-2 border-b flex items-center gap-2">
-      <Link href="/">App</Link>
+    <div className="px-4 py-2 flex items-center gap-2 z-1000">
       <div className="flex-1"></div>
       {user ? (
         <DropdownMenu>
-          <DropdownMenuTrigger>
+          <DropdownMenuTrigger asChild>
             <Button size="sm">{user.name || user.email}</Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
@@ -37,9 +34,9 @@ export const LoginButton = async () => {
           className={buttonVariants({ size: "sm", variant: "outline" })}
           href="/auth/signin"
         >
-          SignIn
+          Sign In
         </Link>
       )}
-    </header>
+    </div>
   );
 };

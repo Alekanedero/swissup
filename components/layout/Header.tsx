@@ -60,12 +60,9 @@ export function Header() {
           </Typography>
 
           <ThemeToggle className="h-8 w-8" />
+          <LoginButton />
         </div>
       </div>
-
-      {/* connection */}
-      <Link href="/auth/signup">SignUp</Link>
-      <LoginButton />
     </header>
   );
 }

@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { getUser } from "@/lib/auth-session";
 import Image from "next/image";
-import { userAgent } from "next/server";
 
 export default async function Home() {
   const user = await getUser();
