@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { Typography } from "../ui/typography";
 import Image from "next/image";
+import { LoginButton } from "../LoginButton";
 
 export function Header() {
   return (
@@ -61,6 +62,10 @@ export function Header() {
           <ThemeToggle className="h-8 w-8" />
         </div>
       </div>
+
+      {/* connection */}
+      <Link href="/auth/signup">SignUp</Link>
+      <LoginButton />
     </header>
   );
 }
