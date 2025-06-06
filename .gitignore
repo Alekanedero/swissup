@@ -13,6 +13,8 @@
 # testing
 /coverage
 
+# mytools
+/mytools
 # next.js
 /.next/
 /out/
@@ -45,4 +47,4 @@ next-env.d.ts
 
 /app/generated/prisma
 
-.mytools
+
