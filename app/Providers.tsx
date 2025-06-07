@@ -1,7 +1,5 @@
-// app/Providers.
 "use client";
 
-// import { SessionProvider } from "next-auth/react";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "next-themes";
 import { PropsWithChildren } from "react";
