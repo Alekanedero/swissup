@@ -1,11 +1,11 @@
 // src/components/ui/Typography.
+import { cn } from "@/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 import type {
   ComponentPropsWithoutRef,
   ElementType,
   PropsWithChildren,
 } from "react";
-import { cn } from "@/src/lib/utils";
 
 type PolymorphicAsProp<E extends ElementType> = {
   as?:
