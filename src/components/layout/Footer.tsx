@@ -1,8 +1,7 @@
-import { SiteConfig } from "@/src/lib/site-config";
-// import Image from "next/image";
 import Link from "next/link";
 import { Typography } from "../ui/typography";
 import Image from "next/image";
+import { SiteConfig } from "@/lib/site-config";
 
 export const Footer = () => {
   return (
