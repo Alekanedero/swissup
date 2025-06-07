@@ -1,9 +1,8 @@
 import { Card } from "@/components/ui/card";
-import { getUser } from "@/lib/auth-session";
+
 import Image from "next/image";
 
 export default async function Home() {
-  const user = await getUser();
   return (
     <div>
       <div className="relative w-full h-[350px] md:h-[500px]">
@@ -23,10 +22,6 @@ export default async function Home() {
         />
       </div>
       <div>
-        <Card>
-          <pre>{JSON.stringify(user, null, 2)}</pre>
-        </Card>
-
         <Card className="max-w-4xl mx-auto mt-8 p-6">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore vero
           fuga laudantium, amet corrupti, tempora placeat sed obcaecati quos

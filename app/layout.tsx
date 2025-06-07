@@ -1,12 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Anek_Telugu } from "next/font/google";
-import { cn } from "@/lib/utils";
 import { Providers } from "./Providers";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import { PropsWithChildren } from "react";
 import { SiteConfig } from "@/lib/site-config";
+import { cn } from "@/lib/utils";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 
 const anekTelugu = Anek_Telugu({
   variable: "--font-caption",
@@ -28,14 +28,6 @@ export const metadata: Metadata = {
   description: SiteConfig.description,
   icons: SiteConfig.icons,
 };
-
-// export default function RootLayout({
-//   modal,
-//   children,
-// }: PropsWithChildren<{
-//   children: React.ReactNode;
-//   modal?: React.ReactNode;
-// }>) {
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
