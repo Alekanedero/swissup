@@ -1,4 +1,3 @@
-import { getUser } from "@/src/lib/auth-session";
 import Link from "next/link";
 import { Button, buttonVariants } from "./ui/button";
 import {
@@ -8,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { LogoutButton } from "./Logout";
+import { getUser } from "@/lib/auth-session";
 
 export const LoginButton = async () => {
   const user = await getUser();
