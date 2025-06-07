@@ -4,7 +4,6 @@ import { Typography } from "../ui/typography";
 import Image from "next/image";
 import { SiteConfig } from "@/lib/site-config";
 import { Button } from "../ui/button";
-import { SignInWithGoogle } from "../../../app/auth/SignInWithGoogle";
 
 export function Header() {
   return (
@@ -64,7 +63,6 @@ export function Header() {
           <Button size="lg" asChild>
             <Link href="/auth/signin">SignIn</Link>
           </Button>
-          <SignInWithGoogle />
         </div>
       </div>
     </header>
