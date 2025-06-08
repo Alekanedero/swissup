@@ -21,19 +21,21 @@ export default async function Home() {
         />
       </div>
       <Layout>
-        <h2>💼 Qui somme-nous ?</h2>
-        <p>
+        <h2 className="text-xl font-bold">💼 Qui somme-nous ?</h2>
+        <p className="text-justify">
           Nous sommes une équipe de professionnels passionnés par
-          l'accompagnement humain et la réussite de projets de vie. Notre
-          mission : faciliter l’intégration des francophones en Suisse, en leur
-          apportant les outils, les conseils et les contacts nécessaires pour
-          réussir leur installation et leur insertion professionnelle.
+          l&#8217;accompagnement humain et la réussite de projets de vie. Notre
+          mission&nbsp;: faciliter l&#8217;intégration des francophones en
+          Suisse, en leur apportant les outils, les conseils et les contacts
+          nécessaires pour réussir leur installation et leur insertion
+          professionnelle.
         </p>
-        <h2>🚀 Ce que nous faisons</h2>
+
+        <h2 className="text-xl font-bold mt-4">🚀 Ce que nous faisons</h2>
         <p>
           Nous proposons un accompagnement premium spécialement conçu pour
           celles et ceux qui souhaitent démarrer une nouvelle vie en Suisse dans
-          les meilleures conditions :
+          les meilleures conditions&nbsp;:
         </p>
       </Layout>
     </div>
