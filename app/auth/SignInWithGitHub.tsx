@@ -16,7 +16,7 @@ export const SignInWithGitHub = () => {
         authClient.signIn.social(
           {
             provider: "github",
-            callbackURL: "/auth",
+            callbackURL: "/",
           },
           {
             onRequest: () => {
