@@ -3,7 +3,6 @@
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 import { ComponentPropsWithRef, useState } from "react";
-import { Button } from "@/components/ui/button";
 
 export const LogoutButton = (props: ComponentPropsWithRef<"button">) => {
   const [isLoading, setIsLoading] = useState(false);
