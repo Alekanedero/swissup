@@ -19,18 +19,12 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { useMutation } from "@tanstack/react-query";
-import { signOut } from "next-auth/react";
 
 export const LoggedInButton = ({
   user,
 }: {
   user: { name: string; email: string };
 }) => {
-  const mutation = useMutation({
-    mutationFn: async () => {
-      signOut();
-    },
-  });
   return (
     <>
       <DropdownMenu>
@@ -64,20 +58,7 @@ export const LoggedInButton = ({
               <AlertDialogCancel asChild>
                 <Button variant="secondary">Cancel</Button>
               </AlertDialogCancel>
-              <Button
-                variant="destructive"
-                onClick={() => {
-                  mutation.mutate();
-                }}
-                disabled={mutation.isPending}
-              >
-                {mutation.isPending ? (
-                  <Loader size={12} className="mr-2" />
-                ) : (
-                  <LogOut size={12} className="mr-2" />
-                )}
-                Logout
-              </Button>
+              <LogoutButton />
             </AlertDialogFooter>
           </AlertDialogContent>
         </AlertDialog>

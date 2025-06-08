@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
-import { Typography } from "../ui/typography";
 import Image from "next/image";
 import { SiteConfig } from "@/lib/site-config";
 import { AuthButton } from "../../../app/auth/AuthButton";
+import { Typography } from "../ui/typography";
 
 export function Header() {
   return (
