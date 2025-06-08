@@ -3,7 +3,6 @@ import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { Typography } from "../ui/typography";
 import Image from "next/image";
 import { SiteConfig } from "@/lib/site-config";
-import { Button } from "../ui/button";
 import { AuthButton } from "../../../app/auth/AuthButton";
 
 export function Header() {
