@@ -109,8 +109,7 @@ export default async function Home() {
             </li>
           </ol>
         </div>
-        <div className="flex items-center justify-center gap-4">
-          <ButtonInscription />
+        <div className="flex items-center justify-center gap-4 w-full">
           <ButtonInscription />
         </div>
       </Layout>
