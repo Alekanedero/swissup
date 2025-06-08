@@ -4,6 +4,7 @@ import { Typography } from "../ui/typography";
 import Image from "next/image";
 import { SiteConfig } from "@/lib/site-config";
 import { Button } from "../ui/button";
+import { AuthButton } from "../../../app/auth/AuthButton";
 
 export function Header() {
   return (
@@ -60,9 +61,7 @@ export function Header() {
           </Typography>
 
           <ThemeToggle className="h-8 w-8" />
-          <Button size="lg" asChild>
-            <Link href="/auth/signin">SignIn</Link>
-          </Button>
+          <AuthButton />
         </div>
       </div>
     </header>

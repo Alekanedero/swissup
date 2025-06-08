@@ -5,7 +5,7 @@ import { authClient } from "@/lib/auth-client";
 import { useState } from "react";
 import { toast } from "sonner";
 
-export const SignInWithGoogle = () => {
+export const SignInButton = () => {
   const [isLoading, setIsLoading] = useState(false);
   return (
     <Button
