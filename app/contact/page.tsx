@@ -4,12 +4,14 @@ import {
   LayoutHeader,
   LayoutTitle,
 } from "@/components/layout/layout";
+import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function PageContact() {
   return (
@@ -24,7 +26,14 @@ export default function PageContact() {
               Vous souhaiter nous contacter pour plus de renseignement
             </CardDescription>
           </CardHeader>
-          <CardContent>swissupcontact@gmail.com</CardContent>
+          <CardContent className="flex flex-col items-center gap-4">
+            <Link
+              className={buttonVariants({ variant: "outline", size: "xl" })}
+              href="mailto:swissupcontact@gmail.com"
+            >
+              swissupcontact@gmail.com
+            </Link>
+          </CardContent>
         </Card>
       </LayoutContent>
     </Layout>
