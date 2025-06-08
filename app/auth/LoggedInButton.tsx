@@ -8,7 +8,7 @@ import {
 import { LogoutButton } from "./LogoutButton";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Loader, LogOut, User2 } from "lucide-react";
+import { User2 } from "lucide-react";
 import {
   AlertDialog,
   AlertDialogCancel,
@@ -18,7 +18,6 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import { useMutation } from "@tanstack/react-query";
 
 export const LoggedInButton = ({
   user,
