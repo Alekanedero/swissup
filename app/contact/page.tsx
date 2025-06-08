@@ -28,7 +28,7 @@ export default function PageContact() {
           </CardHeader>
           <CardContent className="flex flex-col items-center gap-4">
             <Link
-              className={buttonVariants({ variant: "outline", size: "xl" })}
+              className={buttonVariants({ variant: "outline", size: "sm" })}
               href="mailto:swissupcontact@gmail.com"
             >
               swissupcontact@gmail.com
