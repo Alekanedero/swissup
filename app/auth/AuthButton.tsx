@@ -6,7 +6,7 @@ export const AuthButton = async () => {
   const session = await getUser();
 
   if (!session) {
-    return <Link href={"/auth/sigin"}>Signin</Link>;
+    return <Link href={"/auth/signin"}>Signin</Link>;
     // router.push("/auth/signin");
   }
 
