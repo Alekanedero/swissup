@@ -1,7 +1,33 @@
-export default function Contact() {
+import {
+  Layout,
+  LayoutContent,
+  LayoutHeader,
+  LayoutTitle,
+} from "@/components/layout/layout";
+import { CardOffre } from "../offres/CardOffre";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+} from "@/components/ui/card";
+
+export default function PageContact() {
   return (
-    <div className="">
-      <h2>Page contact</h2>
-    </div>
+    <Layout>
+      <LayoutHeader>
+        <LayoutTitle>Nous contacter</LayoutTitle>
+      </LayoutHeader>
+      <LayoutContent>
+        <Card>
+          <CardHeader>
+            <CardDescription>
+              Vous souhaiter nous contacter pour plus de renseignement
+            </CardDescription>
+          </CardHeader>
+          <CardContent>swissupcontact@gmail.com</CardContent>
+        </Card>
+      </LayoutContent>
+    </Layout>
   );
 }

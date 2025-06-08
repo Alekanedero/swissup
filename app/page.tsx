@@ -3,9 +3,8 @@ import Image from "next/image";
 
 export default async function Home() {
   return (
-    <div>
+    <>
       <div className="relative w-full h-[350px] md:h-[500px]">
-        {/* Dégradé subtil en bas de l'image */}
         <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
         <h1 className="w-full absolute bottom-12 left-1/2 -translate-x-1/2 z-20 text-white text-xl md:text-3xl font-bold text-center px-4 max-w-4xl drop-shadow-md">
           Nous sommes là pour rendre votre installation en Suisse simple et
@@ -20,16 +19,10 @@ export default async function Home() {
           priority
         />
       </div>
-      <Layout className="mt-18">
-        {/* --------- Présentation de l'équipe 1 --------- */}
-        <h2 className="text-xl font-bold underline">Qui somme-nous ?</h2>
-        {/* <p className=" text-foreground text-justify leading-relaxed mb-2">
-          Notre équipe, passionnée et expérimentée, s’engage à vos côtés pour
-          transformer votre projet d’installation en Suisse en une expérience
-          fluide et réussie.
-        </p> */}
 
-        {/* --------- Présentation de l'équipe 2 --------- */}
+      <Layout className="mt-18">
+        {/* --------- Qui somme-nous ? --------- */}
+        <h2 className="text-xl font-bold underline">Qui somme-nous ?</h2>
         <div className="space-y-2 text-base text-justify leading-relaxed">
           <p>
             <span className="font-semibold">Notre équipe</span>, passionnée et
@@ -64,34 +57,6 @@ export default async function Home() {
 
         {/* --------- Notre mission --------- */}
         <h2 className="text-xl font-bold mt-4 underline">Notre mission :</h2>
-
-        {/* --------- mission 1 --------- */}
-        {/* <p>
-          Nous proposons un accompagnement premium spécialement conçu pour
-          celles et ceux qui souhaitent démarrer une nouvelle vie en Suisse dans
-          les meilleures conditions&nbsp;:
-        </p>
-        <ul className="list-disc pl-5 space-y-2">
-          <li>
-            Conseils personnalisés pour mieux comprendre le marché de l’emploi
-            suisse et s’y positionner efficacement
-          </li>
-          <li>
-            Relecture et optimisation de CV et lettres de motivation selon les
-            attentes locales
-          </li>
-          <li>
-            Mise en relation avec des recruteurs, agences de placement et
-            partenaires RH de confiance
-          </li>
-          <li>
-            Un guide PDF complet, étape par étape, pour s’installer sereinement
-            (logement, assurances, démarches administratives, etc.)
-          </li>
-        </ul> */}
-
-        {/* --------- mission 2 --------- */}
-
         <div className="space-y-2 text-base text-justify leading-relaxed">
           <p>
             Vous offrir un accompagnement humain et sur-mesure pour réussir
@@ -118,7 +83,7 @@ export default async function Home() {
           </p>
         </div>
 
-        {/* --------- Présentation de l'équipe 1 --------- */}
+        {/* --------- Comment on focntionne ? --------- */}
         <h2 className="text-xl font-bold underline mt-4">
           Comment on fonctionne ?
         </h2>
@@ -144,6 +109,6 @@ export default async function Home() {
           </ol>
         </div>
       </Layout>
-    </div>
+    </>
   );
 }

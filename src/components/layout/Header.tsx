@@ -45,22 +45,13 @@ export function Header() {
           <Typography
             variant="link"
             as={Link}
-            href="/astuces"
-            className="text-muted-foreground hover:text-foreground"
-          >
-            Astuces
-          </Typography>
-          <Typography
-            variant="link"
-            as={Link}
             href="/contact"
             className="text-muted-foreground hover:text-foreground"
           >
             Contact
           </Typography>
-
-          <ThemeToggle className="h-8 w-8" />
           <AuthButton />
+          <ThemeToggle className="h-8 w-8" />
         </div>
       </div>
     </header>

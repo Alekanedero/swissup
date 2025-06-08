@@ -14,11 +14,11 @@ import { Layout } from "@/components/layout/layout";
 export default function SignUpPage() {
   return (
     <Layout>
-      <Card>
+      <Card className="w-full max-w-md mx-auto mt-8">
         <CardHeader>
-          <CardTitle>Sign in</CardTitle>
+          <CardTitle>Connexion</CardTitle>
           <CardDescription>
-            We just need a few details to get you started.
+            Connectez-vous avec votre compte pour continuer
           </CardDescription>
         </CardHeader>
 
