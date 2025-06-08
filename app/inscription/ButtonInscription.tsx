@@ -7,7 +7,7 @@ export const ButtonInscription = () => {
       href="/inscription"
       className={buttonVariants({
         variant: "outline",
-        size: "xl",
+        size: "sm",
       })}
     >
       Inscription

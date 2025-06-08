@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/layout";
 import Image from "next/image";
+import { ButtonInscription } from "./inscription/ButtonInscription";
 
 export default async function Home() {
   return (
@@ -107,6 +108,10 @@ export default async function Home() {
               relais pour tout gérer à vos côtés.
             </li>
           </ol>
+        </div>
+        <div className="flex items-center justify-center gap-4">
+          <ButtonInscription />
+          <ButtonInscription />
         </div>
       </Layout>
     </>
