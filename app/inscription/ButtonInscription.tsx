@@ -1,13 +1,14 @@
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 
-export type ButtonInscriptionProps = {};
-
-export const ButtonInscription = (props: ButtonInscriptionProps) => {
+export const ButtonInscription = () => {
   return (
     <Link
-      href={"/inscription"}
-      className={buttonVariants({ variant: "outline", size: "sm" })}
+      href="/inscription"
+      className={buttonVariants({
+        variant: "outline",
+        size: "xl",
+      })}
     >
       Inscription
     </Link>
