@@ -7,7 +7,7 @@ import {
 import { LogoutButton } from "./LogoutButton";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { LogOut, User2 } from "lucide-react";
+import { User2 } from "lucide-react";
 
 export const LoggedInButton = ({
   user,
