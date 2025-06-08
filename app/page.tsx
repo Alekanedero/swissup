@@ -1,9 +1,7 @@
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { getUser } from "@/lib/auth-session";
 import Image from "next/image";
 
 export default async function Home() {
-  const session = await getUser();
   return (
     <div>
       <div className="relative w-full h-[350px] md:h-[500px]">
@@ -22,20 +20,7 @@ export default async function Home() {
           priority
         />
       </div>
-      <div>
-        <Card className="max-w-4xl mx-auto mt-8 p-6">
-          <CardHeader>Pack 600€</CardHeader>
-          <CardContent>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-              vero fuga laudantium, amet corrupti, tempora placeat sed obcaecati
-              quos velit nisi voluptatem culpa hic nulla iure ea. Dolorum,
-              repellendus dicta.
-            </p>
-          </CardContent>
-        </Card>
-        <Card>{session?.name}</Card>
-      </div>
+      <div className="max-w-4xl mx-auto my-8 px-4 "></div>
     </div>
   );
 }
