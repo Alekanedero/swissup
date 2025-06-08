@@ -4,7 +4,6 @@ import {
   LayoutHeader,
   LayoutTitle,
 } from "@/components/layout/layout";
-import { CardOffre } from "../offres/CardOffre";
 import {
   Card,
   CardContent,
