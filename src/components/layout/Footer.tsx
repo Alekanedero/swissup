@@ -5,7 +5,7 @@ import { SiteConfig } from "@/lib/site-config";
 
 export const Footer = () => {
   return (
-    <footer className="w-full border-t mt-4">
+    <footer className="w-full border-t mt-8">
       <div className="m-auto w-full max-w-3xl px-2 py-4 flex flex-row">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
           <div className="flex flex-row gap-2 items-start">
