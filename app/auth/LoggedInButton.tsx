@@ -29,9 +29,7 @@ export const LoggedInButton = ({
       <DropdownMenu>
         <AlertDialog>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline" size="sm">
-              {user.name || user.email}
-            </Button>
+            <Button size="sm">{user.name || user.email}</Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem asChild>
