@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 import { ComponentPropsWithRef, useState } from "react";
+import { LogOut } from "lucide-react";
 
 export const LogoutButton = (props: ComponentPropsWithRef<"button">) => {
   const [isLoading, setIsLoading] = useState(false);
@@ -26,6 +27,7 @@ export const LogoutButton = (props: ComponentPropsWithRef<"button">) => {
         );
       }}
     >
+      <LogOut size={12} className="mr-2" />
       {isLoading ? "Loading..." : "Logout"}
     </button>
   );

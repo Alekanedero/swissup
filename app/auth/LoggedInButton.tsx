@@ -7,6 +7,7 @@ import {
 import { LogoutButton } from "./LogoutButton";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { LogOut, User2 } from "lucide-react";
 
 export const LoggedInButton = ({
   user,
@@ -21,7 +22,10 @@ export const LoggedInButton = ({
         </DropdownMenuTrigger>
         <DropdownMenuContent>
           <DropdownMenuItem asChild>
-            <Link href="/auth">Account</Link>
+            <Link href="/auth">
+              <User2 size={12} className="mr-2" />
+              Account
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
             <LogoutButton />
