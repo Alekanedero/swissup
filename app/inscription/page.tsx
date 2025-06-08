@@ -6,7 +6,9 @@ import {
 } from "@/components/layout/layout";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { getUser } from "@/lib/auth-session";
-import { SignInWithGoogle } from "../auth/SignInWithGoogle";
+import { SignInWithGitHub2 } from "../auth/SignInWithGitHub2";
+import { SignInWithGoogle2 } from "../auth/SignInWithGoogle2";
+import { FormInscription } from "./FormInscription";
 
 export default async function InscriptionPage() {
   const user = await getUser();
@@ -15,7 +17,7 @@ export default async function InscriptionPage() {
     return (
       <Layout>
         <LayoutHeader>
-          <LayoutTitle>Se connecter</LayoutTitle>
+          <LayoutTitle>Inscription</LayoutTitle>
         </LayoutHeader>
         <LayoutContent>
           <Card>
@@ -24,7 +26,8 @@ export default async function InscriptionPage() {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="flex items-center gap-2 flex-col @sm:flex-row">
-                <SignInWithGoogle />
+                <SignInWithGoogle2 />
+                <SignInWithGitHub2 />
               </div>
             </CardContent>
           </Card>
@@ -37,7 +40,9 @@ export default async function InscriptionPage() {
       <LayoutHeader>
         <LayoutTitle>Inscription</LayoutTitle>
       </LayoutHeader>
-      <LayoutContent></LayoutContent>
+      <LayoutContent>
+        <FormInscription />
+      </LayoutContent>
     </Layout>
   );
 }
