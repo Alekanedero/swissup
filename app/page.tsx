@@ -129,8 +129,8 @@ export default async function Home() {
               quelques clics.
             </li>
             <li>
-              Un chargé d'affaires examine votre dossier sous quelques heures
-              (maximum 3 jours ouvrables).
+              Un chargé d&rsquo;affaires examine votre dossier sous quelques
+              heures (maximum 3 jours ouvrables).
             </li>
             <li>
               Vous êtes recontacté(e)par email ou WhatsApp pour un premier
