@@ -7,7 +7,7 @@ import { AuthButton } from "../../../app/auth/AuthButton";
 
 export function Header() {
   return (
-    <header className="z-100 sticky top-0 w-full border-b bg-background">
+    <header className="z-40 sticky top-0 w-full border-b bg-background">
       <div className="flex flex-col sm:flex-row h-16 items-center justify-center sm:justify-between w-full px-4">
         <div className="flex flex-row gap-2 items-start">
           <Typography
