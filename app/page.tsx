@@ -1,4 +1,4 @@
-import { getUser } from "@/lib/auth-session";
+import { Layout } from "@/components/layout/layout";
 import Image from "next/image";
 
 export default async function Home() {
@@ -20,7 +20,22 @@ export default async function Home() {
           priority
         />
       </div>
-      <div className="max-w-4xl mx-auto my-8 px-4 "></div>
+      <Layout>
+        <h2>💼 Qui somme-nous ?</h2>
+        <p>
+          Nous sommes une équipe de professionnels passionnés par
+          l'accompagnement humain et la réussite de projets de vie. Notre
+          mission : faciliter l’intégration des francophones en Suisse, en leur
+          apportant les outils, les conseils et les contacts nécessaires pour
+          réussir leur installation et leur insertion professionnelle.
+        </p>
+        <h2>🚀 Ce que nous faisons</h2>
+        <p>
+          Nous proposons un accompagnement premium spécialement conçu pour
+          celles et ceux qui souhaitent démarrer une nouvelle vie en Suisse dans
+          les meilleures conditions :
+        </p>
+      </Layout>
     </div>
   );
 }
