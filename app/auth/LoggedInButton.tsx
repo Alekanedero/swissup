@@ -34,7 +34,6 @@ export const LoggedInButton = ({
           <LogoutButton />
         </DropdownMenuItem>
       </DropdownMenuContent>
-      <LogoutButton />
     </DropdownMenu>
   );
 };
