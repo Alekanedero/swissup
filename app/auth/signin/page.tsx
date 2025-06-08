@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { SignInWithGoogle } from "../SignInWithGoogle";
-// import { SignInWithGitHub } from "../SignInWithGitHub";
+import { SignInWithGitHub } from "../SignInWithGitHub";
 
 export default function SignUpPage() {
   return (
@@ -22,7 +22,7 @@ export default function SignUpPage() {
 
       <CardContent className="space-y-6">
         <div className="flex items-center gap-2 flex-col @sm:flex-row">
-          {/* <SignInWithGitHub /> */}
+          <SignInWithGitHub />
           <SignInWithGoogle />
         </div>
       </CardContent>
