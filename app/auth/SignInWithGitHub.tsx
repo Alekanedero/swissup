@@ -5,7 +5,7 @@ import { authClient } from "@/lib/auth-client";
 import { useState } from "react";
 import { toast } from "sonner";
 
-export const SignInButton = () => {
+export const SignInWithGitHub = () => {
   const [isLoading, setIsLoading] = useState(false);
   return (
     <Button
@@ -15,8 +15,8 @@ export const SignInButton = () => {
       onClick={() => {
         authClient.signIn.social(
           {
-            provider: "google",
-            callbackURL: "/",
+            provider: "github",
+            callbackURL: "/auth",
           },
           {
             onRequest: () => {
@@ -30,7 +30,7 @@ export const SignInButton = () => {
         );
       }}
     >
-      {isLoading ? "Loading..." : "Continue with Google"}
+      {isLoading ? "Loading..." : "Continue with GitHub"}
     </Button>
   );
 };

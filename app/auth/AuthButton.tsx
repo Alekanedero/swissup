@@ -1,16 +1,13 @@
 import { getUser } from "@/lib/auth-session";
-import { SignInButton } from "./SignInButton";
 import { LoggedInButton } from "./LoggedInButton";
-
-// export type AuthButtonProps = {};
-
-// export const AuthButton = async (props: AuthButtonProps) => {
+import { useRouter } from "next/navigation";
 
 export const AuthButton = async () => {
   const session = await getUser();
+  const router = useRouter();
 
   if (!session) {
-    return <SignInButton />;
+    return router.push("/auth/signin");
   }
 
   return <LoggedInButton user={session} />;
