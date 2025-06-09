@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { getUser } from "@/lib/auth-session";
 import { SignInWithGitHub2 } from "../auth/SignInWithGitHub2";
 import { SignInWithGoogle2 } from "../auth/SignInWithGoogle2";
-import { FormInscription } from "./FormInscription";
+// import { FormInscription } from "./FormInscription";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 
