@@ -9,6 +9,8 @@ import { getUser } from "@/lib/auth-session";
 import { SignInWithGitHub2 } from "../auth/SignInWithGitHub2";
 import { SignInWithGoogle2 } from "../auth/SignInWithGoogle2";
 import { FormInscription } from "./FormInscription";
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
 
 export default async function InscriptionPage() {
   const user = await getUser();
@@ -41,7 +43,18 @@ export default async function InscriptionPage() {
         <LayoutTitle>Inscription</LayoutTitle>
       </LayoutHeader>
       <LayoutContent>
-        <FormInscription />
+        <Link
+          className={buttonVariants({
+            variant: "outline",
+            className: "mb-8 w-full",
+          })}
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSdfk0EAvwcrEUGCgEv3Rl7ZGVsNYl6kOIG3jadc2VpBIzS7ZQ/viewform?usp=dialog"
+          }
+        >
+          Formulaire
+        </Link>
+        {/* <FormInscription /> */}
       </LayoutContent>
     </Layout>
   );

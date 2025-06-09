@@ -18,6 +18,7 @@ model User {
   updatedAt     DateTime
   sessions      Session[]
   accounts      Account[]
+  dossierClients DossierClient?  // Relation to DossierClient
 
   @@unique([email])
   @@map("user")
@@ -66,4 +67,21 @@ model Verification {
   updatedAt  DateTime?
 
   @@map("verification")
+}
+
+model DossierClient {
+  id          String   @id @default(uuid()) 
+  nom         String
+  prenom      String
+  raison      String
+  typeJob     String  
+
+// relationship with User
+  userId      String   @unique
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("dossier_client")
 }
