@@ -8,9 +8,10 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { getUser } from "@/lib/auth-session";
 import { SignInWithGitHub2 } from "../auth/SignInWithGitHub2";
 import { SignInWithGoogle2 } from "../auth/SignInWithGoogle2";
-// import { FormInscription } from "./FormInscription";
-import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
+import { CreateDossierForm } from "./CreateDossierForm";
+
+// import Link from "next/link";
+// import { buttonVariants } from "@/components/ui/button";
 
 export default async function InscriptionPage() {
   const user = await getUser();
@@ -43,7 +44,7 @@ export default async function InscriptionPage() {
         <LayoutTitle>Inscription</LayoutTitle>
       </LayoutHeader>
       <LayoutContent>
-        <Link
+        {/* <Link
           className={buttonVariants({
             variant: "outline",
             className: "mb-8 w-full",
@@ -53,8 +54,8 @@ export default async function InscriptionPage() {
           }
         >
           Formulaire
-        </Link>
-        {/* <FormInscription /> */}
+        </Link> */}
+        <CreateDossierForm />
       </LayoutContent>
     </Layout>
   );

@@ -2,19 +2,12 @@
 
 import { prisma } from "@/lib/prisma";
 import { authAction } from "@/lib/safe-action";
-import { z } from "zod";
+import { DossierFormSchema } from "./dossier.schema";
 
 export const createDossierAction = authAction
-  .schema(
-    z.object({
-      nom: z.string().min(3),
-      prenom: z.string().min(3),
-      raison: z.string(),
-      typeJob: z.string(),
-    })
-  )
+  .schema(DossierFormSchema)
   .action(async ({ parsedInput, ctx }) => {
-    const inscription = await prisma.dossierClient.create({
+    const dossier = await prisma.dossierClient.create({
       data: {
         nom: parsedInput.nom,
         prenom: parsedInput.prenom,
@@ -23,7 +16,7 @@ export const createDossierAction = authAction
         userId: ctx.user.id, // Assurez-vous que l'utilisateur est authentifié
       },
     });
-    return inscription;
+    return dossier;
   });
 
 // parsedInput contient tout les champs nom, prenom, raison et typeJob, etc
