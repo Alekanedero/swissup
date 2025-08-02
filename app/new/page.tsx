@@ -147,7 +147,7 @@ export default async function Home() {
         {/* -------------- EXPERTISE --------------- */}
 
         <div className="flex flex-col items-center justify-center gap-4 mt-16">
-          <h2 className="text-4xl font-semibold">Nos Secteurs d'Expertise</h2>
+          <h2 className="text-4xl font-semibold">Nos Secteurs d&apos;Expertise</h2>
           <p className="text-neutral-700 text-lg">
             Une connaissance approfondie de tous les m&eacute;tiers de la construction
           </p>
@@ -269,7 +269,7 @@ export default async function Home() {
                   })} mt-4`}
                   href="/inscription"
                 >
-                  Let's Go !
+                  Let&apos;s Go !
                 </Link>
               </div>
             </CardContent>
