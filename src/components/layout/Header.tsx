@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import Image from "next/image";
 import { SiteConfig } from "@/lib/site-config";
 import { AuthButton } from "../../../app/auth/AuthButton";
@@ -30,7 +29,7 @@ export function Header() {
             variant="link"
             as={Link}
             href="/"
-            className="text-muted-foreground hover:text-foreground"
+            className=" text-black hover:text-emerald-600"
           >
             Accueil
           </Typography>
@@ -38,20 +37,20 @@ export function Header() {
             variant="link"
             as={Link}
             href="/offres"
-            className="text-muted-foreground hover:text-foreground"
+            className=" text-black hover:text-emerald-600"
           >
-            Offres
+            Services
           </Typography>
           <Typography
             variant="link"
             as={Link}
             href="/contact"
-            className="text-muted-foreground hover:text-foreground"
+            className=" text-black hover:text-emerald-600"
           >
-            Contact
+            Secteurs
           </Typography>
           <AuthButton />
-          <ThemeToggle className="h-8 w-8" />
+          {/* <ThemeToggle className="h-8 w-8" /> */}
         </div>
       </div>
     </header>

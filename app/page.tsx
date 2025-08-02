@@ -23,7 +23,9 @@ export default async function Home() {
 
       <Layout className="mt-18">
         {/* --------- Qui somme-nous ? --------- */}
-        <h2 className="text-center text-xl font-bold underline">Nos services</h2>
+        <h2 className="text-center text-xl font-bold underline">
+          Nos services
+        </h2>
         <div className="space-y-2 text-base text-justify leading-relaxed">
           <p>
             <span className="font-semibold">Notre équipe</span>, passionnée et
