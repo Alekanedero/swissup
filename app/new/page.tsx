@@ -27,13 +27,14 @@ export default async function Home() {
   return (
     <>
       <div className="w-full flex flex-col gap-4 items-center justify-center bg-gradient-to-b from-emerald-500 to-emerald-800 ">
-        <h1 className="text-3xl md:text-7xl text-center text-white mt-12 md:font-semibold px-2 font-bold">
+        <h1 className="text-7xl text-white mt-12 font-semibold">
           Experts en Recrutement
         </h1>
-        <h1 className="text-3xl md:text-7xl text-center font-semibold">
-          Construction & Bâtiment
-        </h1>
-        <p className="text-emerald-50 text-lg md:text-[22px] text-center italic px-2">
+        <h1 className="text-7xl font-semibold">Construction & Bâtiment</h1>
+        <p
+          className="text-emerald-50 text-center italic"
+          style={{ fontSize: "22px" }}
+        >
           Nous connectons les meilleurs talents avec les entreprises leaders du
           secteur de la construction
         </p>
@@ -70,10 +71,10 @@ export default async function Home() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 m-8 md:flex-row">
-          <CardMove className="flex-1 flex flex-col gap-4">
+        <div className="flex flex-col flex-center gap-4 m-8 md:flex-row">
+          <CardMove className="flex-1 h-full flex flex-col gap-4">
             <CardHeader>
-              <div className="w-full h-[200px] md:h-[150px] relative rounded-lg overflow-hidden">
+              <div className="m-auto w-full h-[150px] relative rounded-lg overflow-hidden">
                 <Image
                   src="/images/12.jpg"
                   alt="picture technique profil"
@@ -95,14 +96,14 @@ export default async function Home() {
             </CardContent>
           </CardMove>
 
-          <CardMove className="flex-1 flex flex-col gap-4">
+          <CardMove className="flex-1 h-full flex flex-col gap-4">
             <CardHeader>
-              <div className="w-full h-[200px] md:h-[150px] relative rounded-lg overflow-hidden">
+              <div className="m-auto w-full h-[150px] relative rounded-lg overflow-hidden">
                 <Image
                   src="/images/1.jpg"
                   alt="picture technique profil"
-                  fill
-                  className="object-cover"
+                  width={5000}
+                  height={50}
                 />
               </div>
               <CardTitle className="mt-3">
@@ -118,22 +119,20 @@ export default async function Home() {
               </CardDescription>
             </CardContent>
           </CardMove>
-
-          <CardMove className="flex-1 flex flex-col gap-4">
+          <CardMove className="flex-1 h-full flex flex-col gap-4">
             <CardHeader>
-              <div className="m-auto w-full h-[200px] md:h-[150px] relative rounded-lg overflow-hidden">
+              <div className="m-auto w-full h-[150px] relative rounded-lg overflow-hidden">
                 <Image
                   src="/images/13.jpg"
                   alt="picture technique profil"
-                  fill
-                  className="object-cover"
+                  width={5000}
+                  height={50}
                 />
               </div>
               <CardTitle className="mt-3">
                 <h3 className="text-lg text-center">Conseil RH</h3>
               </CardTitle>
             </CardHeader>
-
             <CardContent>
               <CardDescription>
                 <p className="text-neutral-700 text-md text-center">
