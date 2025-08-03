@@ -30,7 +30,7 @@ export default async function Home() {
         <h1 className="text-7xl text-white mt-12 font-semibold">
           Experts en Recrutement
         </h1>
-        <h1 className="text-7xl font-semibold">Construction & Bâtiment</h1>
+        <h1 className="text-7xl font-semibold">Construction &amp; B&acirc;timent</h1>
         <p
           className="text-emerald-50 text-center italic"
           style={{ fontSize: "22px" }}
@@ -66,7 +66,7 @@ export default async function Home() {
         <div className="flex flex-col items-center justify-center gap-4 mt-16">
           <h2 className="text-4xl font-semibold">Nos services</h2>
           <p className="text-neutral-700 text-lg">
-            Solutions complètes de recrutement pour tous vos besoins en
+            Solutions compl&eacu;tetes de recrutement pour tous vos besoins en
             construction
           </p>
         </div>
@@ -89,7 +89,7 @@ export default async function Home() {
             <CardContent>
               <CardDescription>
                 <p className="text-neutral-700 text-md text-center">
-                  Directeurs de travaux, ingénieurs, chefs de projets et
+                  Directeurs de travaux, ing&acute;nieurs, chefs de projets et
                   managers pour vos équipe dirigeantes
                 </p>
               </CardDescription>
@@ -113,8 +113,8 @@ export default async function Home() {
             <CardContent>
               <CardDescription>
                 <p className="text-neutral-700 text-md text-center">
-                  Conducteurs de travaux, techniciens spécialisés et experts
-                  métiers qualifiés
+                  Conducteurs de travaux, techniciens sp&eacute;et experts
+                  m&aeacute;tiers qualifi&eacute;s
                 </p>
               </CardDescription>
             </CardContent>
@@ -136,8 +136,8 @@ export default async function Home() {
             <CardContent>
               <CardDescription>
                 <p className="text-neutral-700 text-md text-center">
-                  Accompagnement stratégique et conseil en organisation des
-                  équipes
+                  Accompagnement strat&eacute;gique et conseil en organisation des
+                  &eacute;quipes
                 </p>
               </CardDescription>
             </CardContent>
@@ -147,9 +147,9 @@ export default async function Home() {
         {/* -------------- EXPERTISE --------------- */}
 
         <div className="flex flex-col items-center justify-center gap-4 mt-16">
-          <h2 className="text-4xl font-semibold">Nos Secteurs d'Expertise</h2>
+          <h2 className="text-4xl font-semibold">Nos Secteurs d&apos;Expertise</h2>
           <p className="text-neutral-700 text-lg">
-            Une connaissance approfondie de tous les métiers de la construction
+            Une connaissance approfondie de tous les m&eacute;tiers de la construction
           </p>
         </div>
 
@@ -169,7 +169,7 @@ export default async function Home() {
             <CardContent>
               <CardDescription>
                 <p className="text-neutral-700 text-md text-center">
-                  Résidentiel, tertiaire, indutriel
+                  R&eacute;sidentiel, tertiaire, indutriel
                 </p>
               </CardDescription>
             </CardContent>
@@ -210,7 +210,7 @@ export default async function Home() {
             <CardContent>
               <CardDescription>
                 <p className="text-neutral-700 text-md text-center">
-                  CVC, plomberie, électricité
+                  CVC, plomberie, &eacute;lectricit&eacute;
                 </p>
               </CardDescription>
             </CardContent>
@@ -231,7 +231,7 @@ export default async function Home() {
             <CardContent>
               <CardDescription>
                 <p className="text-neutral-700 text-md text-center">
-                  Solaire, éolien, géothermie
+                  Solaire, &eacute;olien, g&eacute;othermie
                 </p>
               </CardDescription>
             </CardContent>
@@ -269,7 +269,7 @@ export default async function Home() {
                   })} mt-4`}
                   href="/inscription"
                 >
-                  Let's Go !
+                  Let&apos;s Go !
                 </Link>
               </div>
             </CardContent>
