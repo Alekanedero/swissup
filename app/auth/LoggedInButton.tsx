@@ -24,7 +24,7 @@ export const LoggedInButton = ({
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuItem asChild>
-          <Link href="/auth">
+          <Link href="/account">
             <User2 size={12} className="mr-2" />
             Account
           </Link>

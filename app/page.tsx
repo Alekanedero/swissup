@@ -3,25 +3,13 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
+  CardMove,
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { UserPen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
-function CardMove({ className, ...props }: React.ComponentProps<"div">) {
-  return (
-    <div
-      data-slot="card"
-      className={cn(
-        "border-card-border bg-card text-card-foreground flex flex-col gap-6 rounded-md border py-6 shadow-sm transition-transform duration-200 ease-in-out hover:translate-y-[-1px] hover:scale-[1.01] hover:shadow-lg",
-        className
-      )}
-      {...props}
-    />
-  );
-}
 
 export default async function Home() {
   return (
@@ -40,7 +28,7 @@ export default async function Home() {
         <div className="flex gap-2 mb-12">
           <Link
             href="#contact"
-						scroll={true}
+            scroll={true}
             className={buttonVariants({
               variant: "secondary",
               size: "lg",
@@ -50,7 +38,7 @@ export default async function Home() {
           </Link>
           <Link
             href="#services"
-						scroll={true}
+            scroll={true}
             className={buttonVariants({
               variant: "secondary",
               size: "lg",
@@ -64,11 +52,11 @@ export default async function Home() {
       <div className="max-w-[900px] w-full mx-auto px-2">
         {/* -------------- SERVICE --------------- */}
 
-        <div 
-					id="services" 
-					className="flex flex-col items-center justify-center gap-4 mt-16">
-          <h2
-						className="text-4xl font-semibold">Nos services</h2>
+        <div
+          id="services"
+          className="flex flex-col items-center justify-center gap-4 mt-16"
+        >
+          <h2 className="text-4xl font-semibold">Nos services</h2>
           <p className="text-neutral-700 text-lg">
             Solutions compl&eacute;tes de recrutement pour tous vos besoins en
             construction
@@ -150,7 +138,10 @@ export default async function Home() {
 
         {/* -------------- EXPERTISE --------------- */}
 
-        <div  id="secteur" className="flex flex-col items-center justify-center gap-4 mt-16">
+        <div
+          id="secteur"
+          className="flex flex-col items-center justify-center gap-4 mt-16"
+        >
           <h2 className="text-4xl font-semibold">
             Nos Secteurs d&apos;Expertise
           </h2>
@@ -248,8 +239,9 @@ export default async function Home() {
         {/* -------------- CONTACT --------------- */}
 
         <div
-					id="contact"
-					 className="flex flex-col items-center justify-center gap-4 mt-16">
+          id="contact"
+          className="flex flex-col items-center justify-center gap-4 mt-16"
+        >
           <h2 className="text-4xl font-semibold">Contactez-nous</h2>
           <p className="text-neutral-700 text-lg">
             Discutons de vos besoins en recrutement

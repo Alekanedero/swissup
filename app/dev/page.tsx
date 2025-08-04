@@ -7,8 +7,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { SignInWithGoogle } from "../SignInWithGoogle";
+
 import { Layout } from "@/components/layout/layout";
+import { SignInWithGitHub } from "../auth/SignInWithGitHub";
 
 export default function SignUpPage() {
   return (
@@ -16,14 +17,12 @@ export default function SignUpPage() {
       <Card className="w-full max-w-md mx-auto mt-8">
         <CardHeader>
           <CardTitle>Connexion</CardTitle>
-          <CardDescription>
-            Connectez-vous avec votre compte pour continuer
-          </CardDescription>
+          <CardDescription>Connection developpeur</CardDescription>
         </CardHeader>
 
         <CardContent className="space-y-6">
           <div className="flex items-center gap-2 flex-col @sm:flex-row">
-            <SignInWithGoogle />
+            <SignInWithGitHub />
           </div>
         </CardContent>
       </Card>
