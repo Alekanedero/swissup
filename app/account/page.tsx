@@ -6,10 +6,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { getRequiredUser } from "@/lib/auth-session";
-import { Mail, UserPen, Wallet } from "lucide-react";
+import { Mail, User2, UserPen, Wallet } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { PaypalButton } from "./PaypalButton";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default async function AuthPage() {
   const user = await getRequiredUser();
@@ -64,7 +65,7 @@ export default async function AuthPage() {
             <PaypalButton />
           </CardContent>
         </Card>
-        <Card className="mb-20">
+        <Card>
           <CardHeader className="justify-center align-center">
             <div className="m-auto">
               <Mail />
@@ -78,6 +79,25 @@ export default async function AuthPage() {
               Pour toute demande d'information, vous pouvez nous écrire à
               l'adresse : swiss-z@gmail.com.
             </p>
+          </CardContent>
+        </Card>
+        <Card className="mb-20">
+          <CardHeader className="justify-center align-center">
+            <div className="m-auto">
+              <User2 />
+            </div>
+            <CardTitle>
+              <p>Infos personelle</p>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="flex flex-row justify-center items-center gap-4">
+            <Avatar className="rounded">
+              <AvatarFallback>{user.email?.[0]}</AvatarFallback>
+              {user.image && (
+                <AvatarImage src={user.image} alt={user.email ?? ""} />
+              )}
+            </Avatar>
+            <p className="text-neutral-700 text-sm text-center">{user.email}</p>
           </CardContent>
         </Card>
       </div>
