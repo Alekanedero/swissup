@@ -1,120 +1,283 @@
-import { Layout } from "@/components/layout/layout";
+import { buttonVariants } from "@/components/ui/button";
+import {
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+import { UserPen } from "lucide-react";
 import Image from "next/image";
-import { ButtonInscription } from "./inscription/ButtonInscription";
+import Link from "next/link";
+
+function CardMove({ className, ...props }: React.ComponentProps<"div">) {
+  return (
+    <div
+      data-slot="card"
+      className={cn(
+        "border-card-border bg-card text-card-foreground flex flex-col gap-6 rounded-md border py-6 shadow-sm transition-transform duration-200 ease-in-out hover:translate-y-[-1px] hover:scale-[1.01] hover:shadow-lg",
+        className
+      )}
+      {...props}
+    />
+  );
+}
 
 export default async function Home() {
   return (
     <>
-      <div className="relative w-full h-[350px] md:h-[500px]">
-        <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-        <h1 className="w-full absolute bottom-12 left-1/2 -translate-x-1/2 z-20 text-white text-xl md:text-3xl font-bold text-center px-4 max-w-4xl drop-shadow-md">
-          Nous sommes là pour rendre votre installation en Suisse simple et
-          sereine.
+      <div className="w-full flex flex-col gap-4 items-center justify-center bg-gradient-to-b from-emerald-500 to-emerald-800 ">
+        <h1 className="text-3xl md:text-7xl text-white mt-12 font-bold md:font-semibold px-2">
+          Experts en Recrutement
         </h1>
-        <Image
-          src="/images/1.jpg"
-          alt="Bannière de la page d'accueil"
-          fill
-          style={{ objectFit: "cover" }}
-          className="z-0"
-          priority
-        />
+        <h1 className="text-3xl md:text-7xl font-bold md:font-semibold px-2">
+          Construction &amp; B&acirc;timent
+        </h1>
+        <p className="text-emerald-50 text-center md:text-[22px] italic px-2">
+          Nous connectons les meilleurs talents avec les entreprises leaders du
+          secteur de la construction
+        </p>
+        <div className="flex gap-2 mb-12">
+          <Link
+            href="/inscription"
+            className={buttonVariants({
+              variant: "secondary",
+              size: "lg",
+            })}
+          >
+            Nous contacter
+          </Link>
+          <Link
+            href="/inscription"
+            className={buttonVariants({
+              variant: "secondary",
+              size: "lg",
+            })}
+          >
+            Nos services
+          </Link>
+        </div>
       </div>
 
-      <Layout className="mt-18">
-        {/* --------- Qui somme-nous ? --------- */}
-        <h2 className="text-center text-xl font-bold underline">
-          Nos services
-        </h2>
-        <div className="space-y-2 text-base text-justify leading-relaxed">
-          <p>
-            <span className="font-semibold">Notre équipe</span>, passionnée et
-            expérimentée, s’engage à vos côtés pour transformer votre projet
-            d’installation en Suisse en une{" "}
-            <span className="font-semibold text-primary">
-              expérience fluide, structurée et réussie
-            </span>
-            .
-          </p>
-          <p>
-            Nous connaissons les réalités du terrain : les démarches
-            administratives parfois complexes, les différences culturelles, les
-            exigences du marché du travail suisse…
-          </p>
-          <p>
-            C’est pourquoi nous mettons à votre service{" "}
-            <span className="font-semibold">
-              notre expertise, notre bienveillance et notre réseau
-            </span>
-            , afin de vous faire gagner du temps, d’éviter les erreurs
-            courantes, et de maximiser vos chances de réussite.
-          </p>
-          <p>
-            <span className="font-semibold text-primary">
-              Avec nous, vous n’êtes plus seul
-            </span>{" "}
-            : chaque étape est préparée, chaque choix est guidé, chaque
-            opportunité est facilitée.
+      <div className="max-w-[900px] w-full mx-auto px-2">
+        {/* -------------- SERVICE --------------- */}
+
+        <div className="flex flex-col items-center justify-center gap-4 mt-16">
+          <h2 className="text-4xl font-semibold">Nos services</h2>
+          <p className="text-neutral-700 text-lg">
+            Solutions compl&eacute;tes de recrutement pour tous vos besoins en
+            construction
           </p>
         </div>
 
-        {/* --------- Notre mission --------- */}
-        <h2 className="text-xl font-bold mt-4 underline">Notre mission :</h2>
-        <div className="space-y-2 text-base text-justify leading-relaxed">
-          <p>
-            Vous offrir un accompagnement humain et sur-mesure pour réussir
-            votre insertion professionnelle en Suisse.
-          </p>
-          <p>
-            Trouver un emploi seul peut être long, complexe et décourageant,
-            surtout sans connaître les codes du marché local.
-          </p>
-          <p>
-            Grâce à notre expertise, nos conseils personnalisés et notre réseau
-            de partenaires de confiance,{" "}
-            <span className="font-semibold text-primary">
-              vous gagnez en clarté, en efficacité, et surtout en résultats
-            </span>
-            .
-          </p>
-          <p>
-            Nous vous aidons à franchir chaque étape plus sereinement et à{" "}
-            <span className="font-semibold text-primary">
-              accélérer votre accès à l’emploi
-            </span>{" "}
-            en Suisse.
+        <div className="flex flex-col gap-4 m-8 md:flex-row">
+          <CardMove className="flex-1 flex flex-col gap-4">
+            <CardHeader>
+              <div className="m-auto w-full h-[200px] md:h-[150px] relative rounded-lg overflow-hidden">
+                <Image
+                  src="/images/12.jpg"
+                  alt="picture technique profil"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardTitle className="mt-3">
+                <h3 className="text-lg text-center ">Recrutement Cadres</h3>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                <p className="text-neutral-700 text-md text-center">
+                  Directeurs de travaux, ing&acute;nieurs, chefs de projets et
+                  managers pour vos équipe dirigeantes
+                </p>
+              </CardDescription>
+            </CardContent>
+          </CardMove>
+
+          <CardMove className="flex-1 flex flex-col gap-4">
+            <CardHeader>
+              <div className="m-auto w-full h-[200px] md:h-[150px] relative rounded-lg overflow-hidden">
+                <Image
+                  src="/images/1.jpg"
+                  alt="picture technique profil"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardTitle className="mt-3">
+                <h3 className="text-lg text-center">Profils Techniques</h3>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                <p className="text-neutral-700 text-md text-center">
+                  Conducteurs de travaux, techniciens sp&eacute;et experts
+                  m&aeacute;tiers qualifi&eacute;s
+                </p>
+              </CardDescription>
+            </CardContent>
+          </CardMove>
+          <CardMove className="flex-1 flex flex-col gap-4">
+            <CardHeader>
+              <div className="m-auto w-full h-[200px] md:h-[150px] relative rounded-lg overflow-hidden">
+                <Image
+                  src="/images/13.jpg"
+                  alt="picture technique profil"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardTitle className="mt-3">
+                <h3 className="text-lg text-center">Conseil RH</h3>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                <p className="text-neutral-700 text-md text-center">
+                  Accompagnement strat&eacute;gique et conseil en organisation
+                  des &eacute;quipes
+                </p>
+              </CardDescription>
+            </CardContent>
+          </CardMove>
+        </div>
+
+        {/* -------------- EXPERTISE --------------- */}
+
+        <div className="flex flex-col items-center justify-center gap-4 mt-16">
+          <h2 className="text-4xl font-semibold">
+            Nos Secteurs d&apos;Expertise
+          </h2>
+          <p className="text-neutral-700 text-lg">
+            Une connaissance approfondie de tous les m&eacute;tiers de la
+            construction
           </p>
         </div>
 
-        {/* --------- Comment on focntionne ? --------- */}
-        <h2 className="text-xl font-bold underline mt-4">
-          Comment on fonctionne ?
-        </h2>
-        <div className="space-y-2 text-base text-justify leading-relaxed">
-          <ol className="list-decimal list-inside space-y-2">
-            <li>
-              Inscrivez-vous gratuitement via notre formulaire en ligne, en
-              quelques clics.
-            </li>
-            <li>
-              Un chargé d&rsquo;affaires examine votre dossier sous quelques
-              heures (maximum 3 jours ouvrables).
-            </li>
-            <li>
-              Vous êtes recontacté(e)par email ou WhatsApp pour un premier
-              échange personnalisé.
-            </li>
-            <li>
-              Profil validé ? Potentiel travail à la clé ! Vous choisissez votre
-              pack, effectuez le paiement, et votre chargé d’affaires prend le
-              relais pour tout gérer à vos côtés.
-            </li>
-          </ol>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8 mx-32">
+          <CardMove className="flex-1 gap-4">
+            <CardHeader className="justify-center align-center gap-4">
+              <div className="m-auto w-[50px] h-[50px] md:w-[60px] md:h-[60px] relative rounded-lg overflow-hidden">
+                <Image
+                  src="/logo/secteur/1.JPG"
+                  alt="picture technique profil"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardTitle className="text-lg">Bâtiment</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                <p className="text-neutral-700 text-md text-center">
+                  R&eacute;sidentiel, tertiaire, indutriel
+                </p>
+              </CardDescription>
+            </CardContent>
+          </CardMove>
+          <CardMove className="flex-1 gap-4">
+            <CardHeader className="justify-center align-center gap-4">
+              <div className="m-auto w-[50px] h-[50px] md:w-[60px] md:h-[60px] relative rounded-lg overflow-hidden">
+                <Image
+                  src="/logo/secteur/4.JPG"
+                  alt="picture technique profil"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardTitle className="text-lg">Travaux Publics</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                <p className="text-neutral-700 text-md text-center">
+                  Routes, ponts, infrastructures
+                </p>
+              </CardDescription>
+            </CardContent>
+          </CardMove>
+
+          <CardMove className="flex-1 gap-4">
+            <CardHeader className="justify-center align-center gap-4">
+              <div className="m-auto w-[50px] h-[50px] md:w-[60px] md:h-[60px] relative rounded-lg overflow-hidden">
+                <Image
+                  src="/logo/secteur/3.JPG"
+                  alt="picture technique profil"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardTitle className="text-lg">Génie Climatique</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                <p className="text-neutral-700 text-md text-center">
+                  CVC, plomberie, &eacute;lectricit&eacute;
+                </p>
+              </CardDescription>
+            </CardContent>
+          </CardMove>
+
+          <CardMove className="flex-1 gap-4">
+            <CardHeader className="justify-center align-center gap-4">
+              <div className="m-auto w-[50px] h-[50px] md:w-[60px] md:h-[60px] relative rounded-lg overflow-hidden">
+                <Image
+                  src="/logo/secteur/2.JPG"
+                  alt="picture technique profil"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardTitle className="text-lg">Energie Renouvelables</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                <p className="text-neutral-700 text-md text-center">
+                  Solaire, &eacute;olien, g&eacute;othermie
+                </p>
+              </CardDescription>
+            </CardContent>
+          </CardMove>
         </div>
-        <div className="flex items-center justify-center gap-4 w-full">
-          <ButtonInscription />
+
+        {/* -------------- CONTACT --------------- */}
+
+        <div className="flex flex-col items-center justify-center gap-4 mt-16">
+          <h2 className="text-4xl font-semibold">Contactez-nous</h2>
+          <p className="text-neutral-700 text-lg">
+            Discutons de vos besoins en recrutement
+          </p>
         </div>
-      </Layout>
+
+        <div className="flex flex-col flex-center gap-4 m-8 md:flex-row">
+          <CardMove className="flex flex-1">
+            <CardHeader className="justify-center align-center">
+              <div className="m-auto">
+                <UserPen />
+              </div>
+              <CardTitle>Inscription gratuite </CardTitle>
+            </CardHeader>
+            <CardContent className="flex flex-col gap-4">
+              <CardDescription>
+                <p className="text-neutral-700 text-md text-center">
+                  Sans engagement, pour un projet durable.
+                </p>
+              </CardDescription>
+              <div className="flex justify-center items-center">
+                <Link
+                  className={`${buttonVariants({
+                    size: "sm",
+                    variant: "outline",
+                  })} mt-4`}
+                  href="/inscription"
+                >
+                  Let&apos;s Go !
+                </Link>
+              </div>
+            </CardContent>
+          </CardMove>
+        </div>
+      </div>
     </>
   );
 }
