@@ -76,8 +76,8 @@ export default async function AuthPage() {
           </CardHeader>
           <CardContent className="flex flex-col justify-center items-center gap-4">
             <p className="text-neutral-700 text-sm text-center">
-              Pour toute demande d'information, vous pouvez nous écrire à
-              l'adresse : swiss-z@gmail.com.
+              Pour toute demande d information, vous pouvez nous &eacute;crire à
+              l adresse : swiss-z@gmail.com.
             </p>
           </CardContent>
         </Card>
@@ -87,7 +87,7 @@ export default async function AuthPage() {
               <User2 />
             </div>
             <CardTitle>
-              <p>Infos personelle</p>
+              <p>Infos personelles</p>
             </CardTitle>
           </CardHeader>
           <CardContent className="flex flex-row justify-center items-center gap-4">
