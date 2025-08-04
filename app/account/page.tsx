@@ -12,14 +12,17 @@ import { buttonVariants } from "@/components/ui/button";
 
 const PaypalButton = () => {
   return (
-    <a
-      href="https://www.paypal.me/TON_NOM_UTILISATEUR/1"
+    <Link
+      href="https://www.paypal.me/ACompin/1"
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 text-blue-600 underline hover:text-blue-800 transition"
+      className={`${buttonVariants({
+        size: "sm",
+        variant: "outline",
+      })} mt-4`}
     >
       Payer 10€ avec PayPal
-    </a>
+    </Link>
   );
 };
 
