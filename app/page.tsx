@@ -13,8 +13,7 @@ import Link from "next/link";
 
 export default async function Home() {
   const session = await getUser();
-
-  if (session === null) return <div>null</div>;
+  const userId = session?.id;
 
   return (
     <>
@@ -267,7 +266,7 @@ export default async function Home() {
                 </p>
               </CardDescription>
               <div className="flex justify-center items-center">
-                {session.id ? (
+                {userId ? (
                   <Link
                     className={`${buttonVariants({
                       size: "sm",
