@@ -267,7 +267,7 @@ export default async function Home() {
                     size: "sm",
                     variant: "outline",
                   })} mt-4`}
-                  href="/inscription"
+                  href="/auth/signin"
                 >
                   Let&apos;s Go !
                 </Link>
