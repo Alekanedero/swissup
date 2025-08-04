@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { getRequiredUser } from "@/lib/auth-session";
-import { UserPen, Wallet } from "lucide-react";
+import { Mail, UserPen, Wallet } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { PaypalButton } from "./PaypalButton";
@@ -58,10 +58,26 @@ export default async function AuthPage() {
             </CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col justify-center items-center gap-4">
-            <p className="text-neutral-700 text-md text-center">
+            <p className="text-neutral-700 text-sm">
               Le montant de la prestation s’élève à 650 CHF.
             </p>
             <PaypalButton />
+          </CardContent>
+        </Card>
+        <Card className="mb-20">
+          <CardHeader className="justify-center align-center">
+            <div className="m-auto">
+              <Mail />
+            </div>
+            <CardTitle>
+              <p>Contact</p>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="flex flex-col justify-center items-center gap-4">
+            <p className="text-neutral-700 text-sm text-center">
+              Pour toute demande d'information, vous pouvez nous écrire à
+              l'adresse : swiss-z@gmail.com.
+            </p>
           </CardContent>
         </Card>
       </div>
