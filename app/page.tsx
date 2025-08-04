@@ -150,7 +150,7 @@ export default async function Home() {
 
         {/* -------------- EXPERTISE --------------- */}
 
-        <div className="flex flex-col items-center justify-center gap-4 mt-16">
+        <div  id="secteur" className="flex flex-col items-center justify-center gap-4 mt-16">
           <h2 className="text-4xl font-semibold">
             Nos Secteurs d&apos;Expertise
           </h2>
