@@ -3,6 +3,7 @@ import Image from "next/image";
 import { SiteConfig } from "@/lib/site-config";
 import { AuthButton } from "../../../app/auth/AuthButton";
 import { Typography } from "../ui/typography";
+import { ThemeToggle } from "../theme/ThemeToggle";
 
 export function Header() {
   return (
@@ -50,7 +51,7 @@ export function Header() {
             Secteurs
           </Typography>
           <AuthButton />
-          {/* <ThemeToggle className="h-8 w-8" /> */}
+          <ThemeToggle className="h-8 w-8" />
         </div>
       </div>
     </header>
