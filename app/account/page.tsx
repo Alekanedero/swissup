@@ -91,7 +91,7 @@ export default async function AuthPage() {
             </CardTitle>
           </CardHeader>
           <CardContent className="flex flex-row justify-center items-center gap-4">
-            <Avatar className="rounded">
+            <Avatar className="h-8 w-8">
               <AvatarFallback>{user.email?.[0]}</AvatarFallback>
               {user.image && (
                 <AvatarImage src={user.image} alt={user.email ?? ""} />
