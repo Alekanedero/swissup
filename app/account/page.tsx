@@ -10,6 +10,19 @@ import { UserPen, Wallet } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 
+const PaypalButton = () => {
+  return (
+    <a
+      href="https://www.paypal.me/TON_NOM_UTILISATEUR/1"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 text-blue-600 underline hover:text-blue-800 transition"
+    >
+      Payer 10€ avec PayPal
+    </a>
+  );
+};
+
 export default async function AuthPage() {
   const user = await getRequiredUser();
   // const accounts = await auth.api.listUserAccounts({
@@ -66,15 +79,7 @@ export default async function AuthPage() {
             <p className="text-neutral-700 text-md text-center">
               Nous facturons une prestation de 650 chf
             </p>
-            <Link
-              className={`${buttonVariants({
-                size: "sm",
-                variant: "outline",
-              })} mt-4`}
-              href="paypal.me/ACompin"
-            >
-              Pay !!!!
-            </Link>
+            <PaypalButton />
           </CardContent>
         </Card>
       </div>
