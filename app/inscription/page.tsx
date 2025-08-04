@@ -6,7 +6,6 @@ import {
 } from "@/components/layout/layout";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { getUser } from "@/lib/auth-session";
-import { SignInWithGitHub2 } from "../auth/SignInWithGitHub2";
 import { SignInWithGoogle2 } from "../auth/SignInWithGoogle2";
 // import { CreateDossierForm } from "./CreateDossierForm";
 
