@@ -24,8 +24,8 @@ export const LoggedInButton = ({
             {user.image && (
               <AvatarImage src={user.image} alt={user.email ?? ""} />
             )}
-          </Avatar>
-          {user.name || user.email} */}
+          </Avatar> */}
+          {user.name || user.email}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
