@@ -93,7 +93,7 @@ export default async function Home() {
             <CardContent>
               <CardDescription>
                 <p className="text-neutral-700 text-md text-center">
-                  Directeurs de travaux, ing&acute;nieurs, chefs de projets et
+                  Directeurs de travaux, ing&eacute;nieurs, chefs de projets et
                   managers pour vos équipe dirigeantes
                 </p>
               </CardDescription>
