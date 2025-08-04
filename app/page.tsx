@@ -39,7 +39,8 @@ export default async function Home() {
         </p>
         <div className="flex gap-2 mb-12">
           <Link
-            href="/inscription"
+            href="#contact"
+						scroll={true}
             className={buttonVariants({
               variant: "secondary",
               size: "lg",
@@ -246,7 +247,9 @@ export default async function Home() {
 
         {/* -------------- CONTACT --------------- */}
 
-        <div className="flex flex-col items-center justify-center gap-4 mt-16">
+        <div
+					id="contact"
+					 className="flex flex-col items-center justify-center gap-4 mt-16">
           <h2 className="text-4xl font-semibold">Contactez-nous</h2>
           <p className="text-neutral-700 text-lg">
             Discutons de vos besoins en recrutement
