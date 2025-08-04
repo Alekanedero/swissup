@@ -48,7 +48,8 @@ export default async function Home() {
             Nous contacter
           </Link>
           <Link
-            href="/inscription"
+            href="#services"
+						scroll={true}
             className={buttonVariants({
               variant: "secondary",
               size: "lg",
@@ -62,8 +63,11 @@ export default async function Home() {
       <div className="max-w-[900px] w-full mx-auto px-2">
         {/* -------------- SERVICE --------------- */}
 
-        <div className="flex flex-col items-center justify-center gap-4 mt-16">
-          <h2 className="text-4xl font-semibold">Nos services</h2>
+        <div 
+					id="services" 
+					className="flex flex-col items-center justify-center gap-4 mt-16">
+          <h2
+						className="text-4xl font-semibold">Nos services</h2>
           <p className="text-neutral-700 text-lg">
             Solutions compl&eacute;tes de recrutement pour tous vos besoins en
             construction
