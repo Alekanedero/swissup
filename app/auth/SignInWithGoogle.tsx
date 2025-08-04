@@ -16,7 +16,7 @@ export const SignInWithGoogle = () => {
         authClient.signIn.social(
           {
             provider: "google",
-            callbackURL: "/",
+            callbackURL: "/account",
           },
           {
             onRequest: () => {

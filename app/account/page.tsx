@@ -28,12 +28,6 @@ const PaypalButton = () => {
 
 export default async function AuthPage() {
   const user = await getRequiredUser();
-  // const accounts = await auth.api.listUserAccounts({
-  //   headers: await headers(),
-  // });
-  // const sessions = await auth.api.listSessions({
-  //   headers: await headers(),
-  // });
 
   return (
     <div className="flex flex-col gap-4 max-w-[900px] w-full mx-auto px-2">
