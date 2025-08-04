@@ -21,7 +21,7 @@ const PaypalButton = () => {
         variant: "outline",
       })} mt-4`}
     >
-      Payer 10€ avec PayPal
+      Payer 1€ avec PayPal
     </Link>
   );
 };
