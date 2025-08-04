@@ -30,7 +30,7 @@ export default async function InscriptionPage() {
             <CardContent className="space-y-6">
               <div className="flex items-center gap-2 flex-col @sm:flex-row">
                 <SignInWithGoogle2 />
-                <SignInWithGitHub2 />
+                {/* <SignInWithGitHub2 /> */}
               </div>
             </CardContent>
           </Card>
