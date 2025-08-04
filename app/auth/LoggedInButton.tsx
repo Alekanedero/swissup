@@ -14,7 +14,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 export const LoggedInButton = ({
   user,
 }: {
-  user: { name: string; email: string; image?: string };
+  user: { name: string; email: string; image: string };
 }) => {
   return (
     <DropdownMenu>
