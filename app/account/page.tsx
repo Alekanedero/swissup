@@ -78,9 +78,9 @@ export default async function AuthPage() {
               <p>Paiement</p>
             </CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="flex flex-col justify-center items-center gap-4">
             <p className="text-neutral-700 text-md text-center">
-              Nous facturons une prestation de 650 chf
+              Le montant de la prestation s’élève à 650 CHF.
             </p>
             <PaypalButton />
           </CardContent>

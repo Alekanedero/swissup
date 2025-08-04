@@ -6,11 +6,16 @@ import {
   CardMove,
   CardTitle,
 } from "@/components/ui/card";
+import { getUser } from "@/lib/auth-session";
 import { UserPen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {
+  const session = await getUser();
+
+  if (session === null) return <div>null</div>;
+
   return (
     <>
       <div className="w-full flex flex-col gap-4 items-center justify-center bg-gradient-to-b from-emerald-500 to-emerald-800 ">
@@ -262,15 +267,27 @@ export default async function Home() {
                 </p>
               </CardDescription>
               <div className="flex justify-center items-center">
-                <Link
-                  className={`${buttonVariants({
-                    size: "sm",
-                    variant: "outline",
-                  })} mt-4`}
-                  href="/auth/signin"
-                >
-                  Let&apos;s Go !
-                </Link>
+                {session.id ? (
+                  <Link
+                    className={`${buttonVariants({
+                      size: "sm",
+                      variant: "outline",
+                    })} mt-4`}
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdfk0EAvwcrEUGCgEv3Rl7ZGVsNYl6kOIG3jadc2VpBIzS7ZQ/viewform?usp=dialog"
+                  >
+                    Let&apos;s Go !
+                  </Link>
+                ) : (
+                  <Link
+                    className={`${buttonVariants({
+                      size: "sm",
+                      variant: "outline",
+                    })} mt-4`}
+                    href="/auth/signin"
+                  >
+                    Let&apos;s Go !
+                  </Link>
+                )}
               </div>
             </CardContent>
           </CardMove>
