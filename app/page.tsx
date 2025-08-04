@@ -118,7 +118,7 @@ export default async function Home() {
               <CardDescription>
                 <p className="text-neutral-700 text-md text-center">
                   Conducteurs de travaux, techniciens sp&eacute;et experts
-                  m&aeacute;tiers qualifi&eacute;s
+                  m&eacute;tiers qualifi&eacute;s
                 </p>
               </CardDescription>
             </CardContent>
