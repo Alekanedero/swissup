@@ -33,7 +33,7 @@ export const Footer = () => {
           <Link className="hover:underline" href="/">
             CGV
           </Link>
-          <Link className="hover:underline" href="/admin">
+          <Link className="hover:underline" href="/dev">
             Admin
           </Link>
         </div>
