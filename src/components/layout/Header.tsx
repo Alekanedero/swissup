@@ -36,7 +36,7 @@ export function Header() {
           <Typography
             variant="link"
             as={Link}
-            href="/offres"
+            href="#services"
             className=" text-black hover:text-emerald-600"
           >
             Services
@@ -44,7 +44,7 @@ export function Header() {
           <Typography
             variant="link"
             as={Link}
-            href="/contact"
+            href="#secteur"
             className=" text-black hover:text-emerald-600"
           >
             Secteurs
