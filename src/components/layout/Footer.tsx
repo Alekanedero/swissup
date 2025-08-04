@@ -40,7 +40,7 @@ export const Footer = () => {
       </div>
       <div className="flex w-full items-center justify-center">
         <Typography variant="base" className="text-xs text-muted-foreground">
-          &copy; 2025 Swissup
+          &copy; 2025 Swiss-Z
         </Typography>
       </div>
     </footer>

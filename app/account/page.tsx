@@ -9,32 +9,17 @@ import { getRequiredUser } from "@/lib/auth-session";
 import { UserPen, Wallet } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
-
-const PaypalButton = () => {
-  return (
-    <Link
-      href="https://www.paypal.me/ACompin/1"
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`${buttonVariants({
-        size: "sm",
-        variant: "outline",
-      })} mt-4`}
-    >
-      Payer 1€ avec PayPal
-    </Link>
-  );
-};
+import { PaypalButton } from "./PaypalButton";
 
 export default async function AuthPage() {
   const user = await getRequiredUser();
 
   return (
-    <div className="flex flex-col gap-4 max-w-[900px] w-full mx-auto px-2">
+    <div className="flex flex-col gap-4 max-w-[800px] w-full mx-auto px-2">
       <p className="text-xl text-center mt-20 mb-10">
         Bienvenue sur votre compte {user.name} !
       </p>
-      <div className="flex flex-col gap-4 m-8">
+      <div className="flex flex-col gap-8 mt-8">
         <Card className="flex flex-1">
           <CardHeader className="justify-center align-center">
             <div className="m-auto">
