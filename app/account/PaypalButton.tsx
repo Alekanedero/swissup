@@ -4,7 +4,7 @@ import Link from "next/link";
 export const PaypalButton = () => {
   return (
     <Link
-      href="https://www.paypal.me/ACompin/1"
+      href="https://www.paypal.me/ACompin/650"
       target="_blank"
       rel="noopener noreferrer"
       className={`${buttonVariants({
@@ -12,7 +12,7 @@ export const PaypalButton = () => {
         variant: "outline",
       })} mt-4`}
     >
-      Payer 1€ avec PayPal
+      Payer maintenant
     </Link>
   );
 };
