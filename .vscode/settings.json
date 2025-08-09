@@ -13,6 +13,9 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "GitHub Dark",
 
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+
   // Markdown Preview Enh
   "markdown-preview-enhanced.alwaysShowBacklinksInPreview": true,
   "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,

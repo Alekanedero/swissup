@@ -86,7 +86,7 @@ export default async function Home() {
               <CardDescription>
                 <p className="text-muted-foreground text-md text-center">
                   Directeurs de travaux, ing&eacute;nieurs, chefs de projets et
-                  managers pour vos équipe dirigeantes
+                  managers pour vos équipes dirigeantes
                 </p>
               </CardDescription>
             </CardContent>
@@ -109,8 +109,8 @@ export default async function Home() {
             <CardContent>
               <CardDescription>
                 <p className="text-muted-foreground text-md text-center">
-                  Conducteurs de travaux, techniciens sp&eacute;et experts
-                  m&eacute;tiers qualifi&eacute;s
+                  Conducteurs de travaux, techniciens sp&eacute;cialis&eacute;s
+                  et experts m&eacute;tiers qualifi&eacute;s
                 </p>
               </CardDescription>
             </CardContent>
@@ -147,7 +147,7 @@ export default async function Home() {
           className="flex flex-col items-center justify-center gap-4 mt-16"
         >
           <h2 className="text-4xl font-semibold">
-            Nos Secteurs d&apos;Expertise
+            Nos Secteurs d&apos;Expertises
           </h2>
           <p className="text-muted-foreground text-lg">
             Une connaissance approfondie de tous les m&eacute;tiers de la
@@ -171,7 +171,7 @@ export default async function Home() {
             <CardContent>
               <CardDescription>
                 <p className="text-muted-foreground text-md text-center">
-                  R&eacute;sidentiel, tertiaire, indutriel
+                  R&eacute;sidentiel, tertiaire, industriel
                 </p>
               </CardDescription>
             </CardContent>

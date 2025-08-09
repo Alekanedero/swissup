@@ -11,6 +11,7 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { PaypalButton } from "./PaypalButton";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { CopyEmailButton } from "./CopyEmailButton";
 
 export default async function AuthPage() {
   const user = await getRequiredUser();
@@ -33,7 +34,7 @@ export default async function AuthPage() {
           <CardContent className="flex flex-col gap-4">
             <CardDescription>
               <p className="text-muted-foreground text-md text-center">
-                Sans engagement, pour un projet durable.
+                Sans engagement, pour un projet durable
               </p>
             </CardDescription>
             <div className="flex justify-center items-center">
@@ -60,7 +61,7 @@ export default async function AuthPage() {
           </CardHeader>
           <CardContent className="flex flex-col justify-center items-center gap-4">
             <p className="text-muted-foreground text-sm">
-              Le montant de la prestation s’élève à 650 CHF.
+              Le montant de la prestation s’élève à 650 CHF
             </p>
             <PaypalButton />
           </CardContent>
@@ -76,9 +77,10 @@ export default async function AuthPage() {
           </CardHeader>
           <CardContent className="flex flex-col justify-center items-center gap-4">
             <p className="text-muted-foreground text-sm text-center">
-              Pour toute demande d information, vous pouvez nous &eacute;crire à
-              l adresse : swiss-z@gmail.com.
+              Pour toute demande d&apos;information, vous pouvez nous
+              &eacute;crire à l&apos;adresse
             </p>
+            <CopyEmailButton email="suissez.contact@gmail.com" />
           </CardContent>
         </Card>
         <Card className="mb-20">
