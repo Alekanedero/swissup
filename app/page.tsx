@@ -10,6 +10,7 @@ import { getUser } from "@/lib/auth-session";
 import { UserPen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { CopyEmailButton } from "./account/CopyEmailButton";
 
 export default async function Home() {
   const session = await getUser();
@@ -250,6 +251,7 @@ export default async function Home() {
           <p className="text-muted-foreground text-lg">
             Discutons de vos besoins en recrutement
           </p>
+          <CopyEmailButton email="suissez@gmail.com" />
         </div>
 
         <div className="flex flex-col flex-center gap-4 m-8 md:flex-row">

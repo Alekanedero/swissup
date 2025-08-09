@@ -12,6 +12,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import Link from "next/link";
+import { CopyEmailButton } from "../account/CopyEmailButton";
 
 export default function PageContact() {
   return (
@@ -20,19 +21,14 @@ export default function PageContact() {
         <LayoutTitle>Nous contacter</LayoutTitle>
       </LayoutHeader>
       <LayoutContent>
-        <Card>
+        <Card className="mt-8">
           <CardHeader>
             <CardDescription>
               Vous souhaiter nous contacter pour plus de renseignement
             </CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col items-center gap-4">
-            <Link
-              className={buttonVariants({ variant: "outline", size: "sm" })}
-              href="mailto:swissupcontact@gmail.com"
-            >
-              swissupcontact@gmail.com
-            </Link>
+            <CopyEmailButton email="suissez@gmail.com" />
           </CardContent>
         </Card>
       </LayoutContent>
