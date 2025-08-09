@@ -26,7 +26,7 @@ export default function PageContact() {
             </CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col items-center gap-4">
-            <CopyEmailButton email="suissez@gmail.com" />
+            <CopyEmailButton email="suissez.contact@gmail.com" />
           </CardContent>
         </Card>
       </LayoutContent>
