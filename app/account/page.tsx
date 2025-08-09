@@ -32,7 +32,7 @@ export default async function AuthPage() {
           </CardHeader>
           <CardContent className="flex flex-col gap-4">
             <CardDescription>
-              <p className="text-neutral-700 text-md text-center">
+              <p className="text-muted-foreground text-md text-center">
                 Sans engagement, pour un projet durable.
               </p>
             </CardDescription>
@@ -59,7 +59,7 @@ export default async function AuthPage() {
             </CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col justify-center items-center gap-4">
-            <p className="text-neutral-700 text-sm">
+            <p className="text-muted-foreground text-sm">
               Le montant de la prestation s’élève à 650 CHF.
             </p>
             <PaypalButton />
@@ -75,7 +75,7 @@ export default async function AuthPage() {
             </CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col justify-center items-center gap-4">
-            <p className="text-neutral-700 text-sm text-center">
+            <p className="text-muted-foreground text-sm text-center">
               Pour toute demande d information, vous pouvez nous &eacute;crire à
               l adresse : swiss-z@gmail.com.
             </p>
@@ -97,7 +97,9 @@ export default async function AuthPage() {
                 <AvatarImage src={user.image} alt={user.email ?? ""} />
               )}
             </Avatar>
-            <p className="text-neutral-700 text-sm text-center">{user.email}</p>
+            <p className="text-muted-foreground text-sm text-center">
+              {user.email}
+            </p>
           </CardContent>
         </Card>
       </div>
