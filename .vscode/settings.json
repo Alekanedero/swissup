@@ -12,23 +12,21 @@
 
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "GitHub Dark",
-  "workbench.editorAssociations": {
-    "*.md": "vscode.markdown.preview.editor"
-  },
-  "workbench.colorCustomizations": {
 
-    // EXPLORATEUR DE FICHIER
+  // Markdown Preview Enh
+  "markdown-preview-enhanced.alwaysShowBacklinksInPreview": true,
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+
+  "workbench.colorCustomizations": {
+    // Explorateur de fichier
     "tree.indentGuidesStroke": "#fdfdfd", //Couleur des guides actifs
     "tree.inactiveIndentGuidesStroke": "#323333", // Couleur des guides inactifs
     "list.inactiveSelectionBackground": "#3A3D41", // Fond de l'élément non actif
 
-    // EDITEUR DE TEXTE
+    // Editeur de texte
     "editorIndentGuide.background1": "#444444", // Couleur des guides inactifs
     "editorIndentGuide.activeBackground1": "#FFFFFF" // Couleur des guides actifs
   },
-
-  // Ouvrir dans un nouvel onglet
-  "workbench.editor.enablePreview": true,
 
   "workbench.startupEditor": "none",
   "workbench.tree.indent": 14,
@@ -39,8 +37,7 @@
     "editor.suggest.showKeywords": false
   },
 
-  // MATERIAL ICON THEME
-
+  // Matériel icon
   "material-icon-theme.hidesExplorerArrows": true, // Affiche ou masque les flèches d'exploration
   "material-icon-theme.folders.theme": "specific", // Thème des dossiers
   "material-icon-theme.folders.color": "#90a4ae", // Couleur des dossiers

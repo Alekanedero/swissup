@@ -1,11 +1,11 @@
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "formulahendry.auto-rename-tag",
-    "naumovs.color-highlight",
-    "pkief.material-icon-theme",
-    "usernamehw.errorlens",
-    "bierner.markdown-mermaid"
+    "dbaeumer.vscode-eslint", // Linter JavaScript/TypeScript
+    "esbenp.prettier-vscode", // Formatage automatique du code
+    "formulahendry.auto-rename-tag", // Renommer automatiquement les balises HTML/XML appariées
+    "naumovs.color-highlight", // Voir les couleurs directement dans le code
+    "pkief.material-icon-theme", // Icônes de fichiers et dossiers stylées
+    "usernamehw.errorlens", // Afficher les erreurs directement dans l'éditeur
+    "shd101wyy.markdown-preview-enhanced" // Markdown Preview Enh
   ]
 }

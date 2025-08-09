@@ -60,7 +60,8 @@ export default async function Home() {
           className="flex flex-col items-center justify-center gap-4 mt-16"
         >
           <h2 className="text-4xl font-semibold">Nos services</h2>
-          <p className="text-neutral-700 text-lg">
+          {/* <p className="text-neutral-700 text-lg text-foreground"> */}
+          <p className="text-lg text-foreground">
             Solutions compl&eacute;tes de recrutement pour tous vos besoins en
             construction
           </p>
