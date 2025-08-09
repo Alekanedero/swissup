@@ -251,7 +251,7 @@ export default async function Home() {
           <p className="text-muted-foreground text-lg">
             Discutons de vos besoins en recrutement
           </p>
-          <CopyEmailButton email="suissez@gmail.com" />
+          <CopyEmailButton email="suissez.contact@gmail.com" />
         </div>
 
         <div className="flex flex-col flex-center gap-4 m-8 md:flex-row">
