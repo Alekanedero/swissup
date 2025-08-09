@@ -15,6 +15,7 @@ import { CopyEmailButton } from "./account/CopyEmailButton";
 export default async function Home() {
   const session = await getUser();
   const userId = session?.id;
+  // e enlever
 
   return (
     <>
