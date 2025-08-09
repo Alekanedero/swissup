@@ -30,7 +30,7 @@ export function Header() {
             variant="link"
             as={Link}
             href="/"
-            className=" text-black hover:text-emerald-600"
+            className="text-foreground hover:text-emerald-600"
           >
             Accueil
           </Typography>
@@ -38,7 +38,7 @@ export function Header() {
             variant="link"
             as={Link}
             href="/#services"
-            className=" text-black hover:text-emerald-600"
+            className="text-foreground hover:text-emerald-600"
           >
             Services
           </Typography>
@@ -46,7 +46,7 @@ export function Header() {
             variant="link"
             as={Link}
             href="/#secteur"
-            className=" text-black hover:text-emerald-600"
+            className="text-foreground hover:text-emerald-600"
           >
             Secteurs
           </Typography>

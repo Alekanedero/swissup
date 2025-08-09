@@ -21,7 +21,7 @@ export default async function Home() {
         <h1 className="text-3xl md:text-7xl text-white mt-12 font-bold md:font-semibold px-2">
           Experts en Recrutement
         </h1>
-        <h1 className="text-3xl md:text-7xl font-bold md:font-semibold px-2">
+        <h1 className="text-3xl md:text-7xl font-bold md:font-semibold px-2 text-black">
           Construction &amp; B&acirc;timent
         </h1>
         <p className="text-emerald-50 text-center md:text-[22px] italic px-2">
@@ -61,7 +61,7 @@ export default async function Home() {
         >
           <h2 className="text-4xl font-semibold">Nos services</h2>
           {/* <p className="text-neutral-700 text-lg text-foreground"> */}
-          <p className="text-lg text-foreground">
+          <p className="text-lg text-muted-foreground">
             Solutions compl&eacute;tes de recrutement pour tous vos besoins en
             construction
           </p>
@@ -79,12 +79,12 @@ export default async function Home() {
                 />
               </div>
               <CardTitle className="mt-3">
-                <h3 className="text-lg text-center ">Recrutement Cadres</h3>
+                <h3 className="text-lg text-center">Recrutement Cadres</h3>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription>
-                <p className="text-neutral-700 text-md text-center">
+                <p className="text-muted-foreground text-md text-center">
                   Directeurs de travaux, ing&eacute;nieurs, chefs de projets et
                   managers pour vos équipe dirigeantes
                 </p>
@@ -108,7 +108,7 @@ export default async function Home() {
             </CardHeader>
             <CardContent>
               <CardDescription>
-                <p className="text-neutral-700 text-md text-center">
+                <p className="text-muted-foreground text-md text-center">
                   Conducteurs de travaux, techniciens sp&eacute;et experts
                   m&eacute;tiers qualifi&eacute;s
                 </p>
@@ -131,7 +131,7 @@ export default async function Home() {
             </CardHeader>
             <CardContent>
               <CardDescription>
-                <p className="text-neutral-700 text-md text-center">
+                <p className="text-muted-foreground text-md text-center">
                   Accompagnement strat&eacute;gique et conseil en organisation
                   des &eacute;quipes
                 </p>
@@ -149,7 +149,7 @@ export default async function Home() {
           <h2 className="text-4xl font-semibold">
             Nos Secteurs d&apos;Expertise
           </h2>
-          <p className="text-neutral-700 text-lg">
+          <p className="text-muted-foreground text-lg">
             Une connaissance approfondie de tous les m&eacute;tiers de la
             construction
           </p>
@@ -170,7 +170,7 @@ export default async function Home() {
             </CardHeader>
             <CardContent>
               <CardDescription>
-                <p className="text-neutral-700 text-md text-center">
+                <p className="text-muted-foreground text-md text-center">
                   R&eacute;sidentiel, tertiaire, indutriel
                 </p>
               </CardDescription>
@@ -190,7 +190,7 @@ export default async function Home() {
             </CardHeader>
             <CardContent>
               <CardDescription>
-                <p className="text-neutral-700 text-md text-center">
+                <p className="text-muted-foreground text-md text-center">
                   Routes, ponts, infrastructures
                 </p>
               </CardDescription>
@@ -211,7 +211,7 @@ export default async function Home() {
             </CardHeader>
             <CardContent>
               <CardDescription>
-                <p className="text-neutral-700 text-md text-center">
+                <p className="text-muted-foreground text-md text-center">
                   CVC, plomberie, &eacute;lectricit&eacute;
                 </p>
               </CardDescription>
@@ -232,7 +232,7 @@ export default async function Home() {
             </CardHeader>
             <CardContent>
               <CardDescription>
-                <p className="text-neutral-700 text-md text-center">
+                <p className="text-muted-foreground text-md text-center">
                   Solaire, &eacute;olien, g&eacute;othermie
                 </p>
               </CardDescription>
@@ -247,7 +247,7 @@ export default async function Home() {
           className="flex flex-col items-center justify-center gap-4 mt-16"
         >
           <h2 className="text-4xl font-semibold">Contactez-nous</h2>
-          <p className="text-neutral-700 text-lg">
+          <p className="text-muted-foreground text-lg">
             Discutons de vos besoins en recrutement
           </p>
         </div>
@@ -262,7 +262,7 @@ export default async function Home() {
             </CardHeader>
             <CardContent className="flex flex-col gap-4">
               <CardDescription>
-                <p className="text-neutral-700 text-md text-center">
+                <p className="text-muted-foreground text-md text-center">
                   Sans engagement, pour un projet durable.
                 </p>
               </CardDescription>
