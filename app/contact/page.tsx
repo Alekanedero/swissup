@@ -4,14 +4,12 @@ import {
   LayoutHeader,
   LayoutTitle,
 } from "@/components/layout/layout";
-import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
 } from "@/components/ui/card";
-import Link from "next/link";
 import { CopyEmailButton } from "../account/CopyEmailButton";
 
 export default function PageContact() {
